@@ -1,0 +1,52 @@
+.logo {
+    background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px 0;
+
+    a {
+        color: white;
+    }
+}
+
+form {
+    margin: 25px auto;
+    text-align: center;
+    display: flex;
+
+}
+
+.img {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    max-width: 600px !important;
+    height: 600px;
+    overflow: hidden;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+
+    img {
+        width: 100% !important;
+        height: 600px;
+        transition: 0.3s; 
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+@media(max-width: 640px) {
+    .img {
+        height: 350px;
+    }
+}
+
+@media(max-width: 320px) {
+    .img {
+        height: 250px;
+    }
+}
